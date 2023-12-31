@@ -1,0 +1,39 @@
+.select {
+    position: relative;
+    width: 120px;
+
+    &-value {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        background: lighten(gray, 35%);
+        padding: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+        &-icon {}
+    }
+
+    &-options {
+        position: absolute;
+        left: 0;
+        top: calc(100% + 5px);
+        width: 100%;
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    &-option {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        padding: 0 10px;
+        cursor: pointer;
+
+        &:hover {
+            background: lighten(gray, 35%);
+        }
+    }
+}
